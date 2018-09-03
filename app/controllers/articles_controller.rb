@@ -30,6 +30,7 @@ class ArticlesController < ApplicationController
       render json: @article
     else
       render json: @article.errors, status: :unprocessable_entity
+      
     end
   end
 
